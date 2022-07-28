@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="estilos.css">
+  <title>Exercicio Calculadora</title>
+</head>
+
+<body>
+  <table class="calculadora">
+    <tr>
+      <td colspan="4"> <input class="display" type="text" id="txtDisplay" value="teste" disabled /> </td>
+    </tr>
+    <tr>
+      <td><input type="button" class="botaoNumero" onclick="digitado(1)" value="1"></td>
+      <td><input type="button" class="botaoNumero" onclick="digitado(2)" value="2"></td>
+      <td><input type="button" class="botaoNumero" onclick="digitado(3)" value="3"></td>
+      <td><input type="button" class="botaoNumero" onclick="operacao('divisao')" value="/"></td>
+    </tr>
+    <tr>
+      <td><input type="button" class="botaoNumero" onclick="digitado(4)" value="4"></td>
+      <td><input type="button" class="botaoNumero" onclick="digitado(5)" value="5"></td>
+      <td><input type="button" class="botaoNumero" onclick="digitado(6)" value="6"></td>
+      <td><input type="button" class="botaoNumero" onclick="operacao('multiplicacao')" value="*"></td>
+    </tr>
+    <tr>
+      <td><input type="button" class="botaoNumero" onclick="digitado(7)" value="7"></td>
+      <td><input type="button" class="botaoNumero" onclick="digitado(8)" value="8"></td>
+      <td><input type="button" class="botaoNumero" onclick="digitado(9)" value="9"></td>
+      <td><input type="button" class="botaoNumero" onclick="operacao('subtrair')" value="-"></td>
+    </tr>
+    <tr>
+      <td><input type="button" class="botaoNumero" onclick="operacao('cancelar')" value="C"></td>
+      <td><input type="button" class="botaoNumero" onclick="digitado(0)" value="0"></td>
+      <td><input type="button" class="botaoNumero" onclick="operacao('decimal')" value="."></td>
+      <td><input type="button" class="botaoNumero" onclick="operacao('soma')" value="+"></td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <input type="button" class="botaoNumero" onclick="operacao('igual')" value="=">
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
+<script src="index.js"></script>
